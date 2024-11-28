@@ -1,0 +1,88 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        cursor: none;
+      }
+.container {
+        height: 100vh;
+        width: 100vw;
+        user-select: none;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+          url("./forest-7459553_960_720.jpg") center/cover;
+      }
+.instructions {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 24px;
+        color: rgb(224, 228, 4);
+        font-weight: bolder;
+      }
+ul {
+        list-style: none;
+      }
+.bee-container {
+        height: 90%;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        position: relative;
+      }
+.cursor {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        top: 426px;
+        left: 0px;
+        display: block;
+      }
+.bee {
+        height: 98px;
+        width: 90px;
+        position: absolute;
+        display: none;
+      }
+.game{
+        height: 32%;
+        font-size: 24px;
+        width: 30%;
+        background-color: rgba(255,255,255, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+#game-over{
+        display: none;
+      }
+button{
+        padding: 5px 60px;
+        font-size: 18px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 1.2s ease;
+        border: none;
+      }
+button:hover{
+        background-color: crimson;
+        color: cornsilk;
+        transform: scaleX(1.5);
+      }
+.blood {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  transform: translate(60%,150%);
+  display: none;
+}
